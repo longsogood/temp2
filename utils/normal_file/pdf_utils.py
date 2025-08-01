@@ -54,7 +54,8 @@ def process_pdf(pdf_bytes):
                             img_format = base_image.get("ext", "png")
                             img_b64 = base64.b64encode(image_bytes).decode()
                             # Markdown nhúng ảnh base64
-                            markdown_img = f'![page{page_num+1}_img{img_count}](data:image/{img_format};base64,{img_b64})'
+                            # markdown_img = f'![page{page_num+1}_img{img_count}](data:image/{img_format};base64,{img_b64})'
+                            markdown_img = f'![page{page_num+1}_img{img_count}](URL hiển thị)'
                             markdown_lines.append(markdown_img)
                             images.append({
                                 "name": f"page{page_num+1}_img{img_count}.{img_format}",
