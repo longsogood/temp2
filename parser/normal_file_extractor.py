@@ -6,6 +6,11 @@ from pathlib import Path
 import io
 from dotenv import load_dotenv
 
+# Import các utils riêng biệt
+from utils.normal_file.xlsx_utils import process_xlsx
+from utils.normal_file.docx_utils import process_docx
+from utils.normal_file.pdf_utils import process_pdf
+
 SEND_RESPONSE_API_URL = os.getenv("SEND_RESPONSE_API_URL")
 
 load_dotenv()
