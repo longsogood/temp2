@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-docx
+boto3
+botocore
+python-dotenv
+requests
+openpyxl
+openpyxl-image-loader
+Pillow
+uv
+json-repair
+pymupdf
